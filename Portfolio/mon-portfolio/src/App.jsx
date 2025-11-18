@@ -11,8 +11,6 @@ function App() {
       <main className="px-6 md:px-12 py-8">
         <Projects />
         <Skills />
-        <div className="p-10 bg-primary text-white">Test couleur bleu</div>
-        <div className="p-10 bg-primary text-white">Test couleur bleu</div>
         <Contact />
       </main>
       <Footer />
