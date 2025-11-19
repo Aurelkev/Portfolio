@@ -43,7 +43,7 @@ export default function ProjectGrid() {
             >
               <button
                 onClick={closeModal}
-                className="absolute top-2 right-2 text-black hover:text-gray-700 text-3xl font-bold cursor-pointer"
+                className="absolute top-1 right-4 text-black hover:text-gray-700 text-3xl font-bold cursor-pointer"
               >
                 &times;
               </button>
