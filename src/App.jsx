@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
@@ -9,6 +10,7 @@ function App() {
     <div className="font-sans text-dark bg-lightGray">
       <Navbar />
       <main className="px-6 md:px-12 py-8">
+        <About />
         <Projects />
         <Skills />
         <Contact />
