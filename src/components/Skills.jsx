@@ -1,5 +1,6 @@
 import React from "react";
 import { skillsList } from "../data/skillsData";
+import { logos } from "../assets/assetsMap";
 
 export default function Skills() {
   return (
@@ -11,7 +12,7 @@ export default function Skills() {
                      shadow-sm hover:shadow-md transition relative group"
         >
           <img
-            src={skill.logo}
+            src={logos[skill.logo]}
             alt={skill.name}
             className="w-10 h-10 object-contain"
           />

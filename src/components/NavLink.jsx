@@ -1,13 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const NavLink = ({ text, href }) => {
-  return (
-    <li>
-      <a href={href} className="hover:text-accent transition">
-        {text}
-      </a>
-    </li>
+
+export default function NavLink({ text, href, to }) {
+  return to ? (
+    <Link
+      to={to}
+      className="hover:text-accent transition cursor-pointer"
+    >
+      {text}
+    </Link>
+  ) : (
+    <a href={href} className="hover:text-accent transition">
+      {text}
+    </a>
   );
-};
-
-export default NavLink;
+}

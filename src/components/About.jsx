@@ -1,6 +1,8 @@
+import { images } from "../assets/assetsMap";
+
 export default function About() {
   return (
-    <section id="apropos" className="my-20">
+    <section id="about" className="my-20">
       <h2 className="text-3xl font-bold text-primary mb-8">À propos</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -37,7 +39,7 @@ export default function About() {
         <div className="flex justify-center">
           <div className="w-60 h-60 rounded-xl overflow-hidden shadow-lg border border-dark">
             <img
-              src="./img/logo.jpg"
+              src={images.logo}
               alt="Illustration développeur"
               className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-140"
             />

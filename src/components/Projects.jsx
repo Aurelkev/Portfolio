@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { projectList } from "../data/projectsData";
+import { images } from "../assets/assetsMap";
+
 
 export default function ProjectGrid() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -18,7 +20,7 @@ export default function ProjectGrid() {
             onClick={() => openModal(project)}
           >
             <img
-              src={project.image}
+              src={images[project.image]}
               alt={project.title}
               className="w-4/5 h-auto transition-transform duration-300 group-hover:scale-110"
             />
