@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import ContainWrap from "./components/ContainWrap";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -12,7 +12,7 @@ function App() {
       <main className="px-6 md:px-12 py-8">
         <About />
         <Projects />
-        <Skills />
+        <ContainWrap />
         <Contact />
       </main>
       <Footer />
