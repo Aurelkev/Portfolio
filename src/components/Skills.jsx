@@ -7,7 +7,7 @@ export default function Skills() {
     <div
       className="
         grid 
-        grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 
+        grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 
         gap-6
       "
     >

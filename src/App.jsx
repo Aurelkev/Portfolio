@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div className="font-sans text-dark bg-lightGray">
-      <main className="px-6 md:px-12 py-8">
+      <main className="px-6 md:px-12 py-2">
         <About />
         <Projects />
         <ContainWrap />
