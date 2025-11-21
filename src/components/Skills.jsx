@@ -4,7 +4,13 @@ import { logos } from "../assets/assetsMap";
 
 export default function Skills() {
   return (
-    <div className="grid grid-cols-6 gap-6">
+    <div
+      className="
+        grid 
+        grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 
+        gap-6
+      "
+    >
       {skillsList.map((skill, idx) => (
         <div
           key={idx}

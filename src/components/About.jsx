@@ -3,8 +3,6 @@ import { images } from "../assets/assetsMap";
 export default function About() {
   return (
     <section id="about" className="my-20">
-      <h2 className="text-3xl font-bold text-primary mb-8">À propos</h2>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="text-center text-lg leading-relaxed text-dark">
           <h3

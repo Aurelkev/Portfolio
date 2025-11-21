@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { projectList } from "../data/projectsData";
 import { images } from "../assets/assetsMap";
 
-
 export default function ProjectGrid() {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -12,7 +11,8 @@ export default function ProjectGrid() {
   return (
     <section id="projets" className="my-16">
       <h2 className="text-3xl font-bold text-primary mb-8">Mes Projets</h2>
-      <div className="grid grid-cols-4 gap-[20px]">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]">
         {projectList.map((project, idx) => (
           <div
             key={idx}
@@ -27,7 +27,7 @@ export default function ProjectGrid() {
 
             <div className="absolute inset-0 bg-gray-800 opacity-80 rounded"></div>
 
-            <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-3xl">
+            <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-3xl text-center px-2">
               {project.title}
             </div>
           </div>
@@ -38,9 +38,13 @@ export default function ProjectGrid() {
         <>
           <div className="fixed inset-0 z-40" onClick={closeModal}></div>
 
-          <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
             <div
-              className="bg-white border-3 border-black rounded-lg p-[30px] w-1/2 max-w-2xl relative text-black"
+              className="
+                bg-white border-3 border-black rounded-lg p-[30px] 
+                w-11/12 sm:w-3/4 lg:w-1/2 
+                max-w-2xl relative text-black
+              "
               onClick={(e) => e.stopPropagation()}
             >
               <button
