@@ -3,7 +3,7 @@ export default function LifePath() {
     <div className="flex flex-col items-center justify-center border border-dashed border-gray-400 rounded-xl p-6 bg-white gap-4">
       <a
         href="/cv"
-        className="px-6 py-3 bg-primary text-white font-semibold rounded-lg 
+        className="px-6 py-3 bg-primary-dark text-white font-semibold rounded-lg 
                    hover:bg-primary/80 transition shadow"
       >
         Voir mon CV

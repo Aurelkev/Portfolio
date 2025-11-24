@@ -2,6 +2,8 @@
 
 @theme {
   --color-primary: #1E90FF;
+  --color-secondary: #7ABDFF;
+  --color-primary-dark: #006EDB;
   --color-dark: #2C2C2C;
   --color-accent: #9B30FF;
   --color-accent2: #FF00FF;

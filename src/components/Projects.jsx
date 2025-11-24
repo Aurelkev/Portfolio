@@ -10,7 +10,7 @@ export default function ProjectGrid() {
 
   return (
     <section id="projets" className="my-16">
-      <h2 className="text-3xl font-bold text-primary mb-8">Mes Projets</h2>
+      <h2 className="text-3xl font-bold text-primary-dark mb-8">Mes Projets</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]">
         {projectList.map((project, idx) => (

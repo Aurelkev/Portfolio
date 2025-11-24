@@ -16,10 +16,10 @@ export default function Navbar() {
           alt="Mon Logo"
           className="h-10 md:h-14 w-auto rounded-4xl"
         />
-        <span className="text-2xl md:text-3xl font-bold">Holleville Kévin</span>
+        <h1 className="text-2xl md:text-3xl font-bold">Holleville Kévin</h1>
       </div>
 
-      <ul className="hidden md:flex space-x-6 text-primary font-medium">
+      <ul className="hidden md:flex space-x-6 text-secondary font-medium">
         <NavLink text="Accueil" to="/" />
         <NavLink text="À propos" href="#about" />
         <NavLink text="Projets" href="#projets" />
@@ -30,6 +30,7 @@ export default function Navbar() {
       <button className="md:hidden text-primary" onClick={() => setOpen(!open)}>
         {!open && <FontAwesomeIcon icon={faBars} className="w-8 h-8" />}
         {open && <FontAwesomeIcon icon={faXmark} className="w-8 h-8" />}
+        <span className="sr-only">{open ? "Fermer le menu" : "Ouvrir le menu"}</span>
       </button>
 
       {open && (
