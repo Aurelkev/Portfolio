@@ -36,14 +36,14 @@ export default function ProjectGrid() {
 
       {selectedProject && (
         <>
-          <div className="fixed inset-0 z-40" onClick={closeModal}></div>
-
+          <div className="fixed inset-0 z-40 bg-black bg-opacity-50" onClick={closeModal}></div>
           <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
             <div
               className="
                 bg-white border-3 border-black rounded-lg p-[30px] 
                 w-11/12 sm:w-3/4 lg:w-1/2 
                 max-w-2xl relative text-black
+                shadow-lg
               "
               onClick={(e) => e.stopPropagation()}
             >
@@ -54,15 +54,25 @@ export default function ProjectGrid() {
                 &times;
               </button>
 
-              <h3 className="text-2xl font-bold mb-4 text-center text-blue-600">
+              <h3 className="text-2xl font-bold mb-6 text-center text-blue-600">
                 {selectedProject.title}
               </h3>
 
-              <p className="mb-6 text-center">{selectedProject.desc}</p>
+              <div className="mb-6 text-left text-gray-800 leading-relaxed">
+                {selectedProject.sections
+                  ? selectedProject.sections.map((section, idx) => (
+                      <p key={idx} className="mb-3">
+                        <strong className="text-blue-600 underline">{section.title} :</strong> {section.content}
+                      </p>
+                    ))
+                  : <p>{selectedProject.desc}</p> }
+              </div>
 
               <div className="flex justify-center">
                 <a
                   href={selectedProject.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary text-white px-6 py-2 rounded hover:bg-accent transition text-center"
                 >
                   Voir le projet
