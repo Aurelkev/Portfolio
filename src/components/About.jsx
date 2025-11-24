@@ -21,9 +21,9 @@ export default function About() {
 
           <p className="mb-4 drop-shadow-sm transition transform hover:scale-105">
             J’utilise principalement{" "}
-            <span className="font-semibold text-primary">React</span>,{" "}
-            <span className="font-semibold text-primary">Vite</span>,{" "}
-            <span className="font-semibold text-primary">TailwindCSS</span> et
+            <span className="font-semibold text-primary-dark">React</span>,{" "}
+            <span className="font-semibold text-primary-dark">Vite</span>,{" "}
+            <span className="font-semibold text-primary-dark">TailwindCSS</span> et
             je m’intéresse particulièrement aux bonnes pratiques, à la
             performance et à l’accessibilité.
           </p>
