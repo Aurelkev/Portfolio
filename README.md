@@ -46,17 +46,17 @@ Chaque partie du site est pensée pour être **claire, efficace et agréable à 
 ```bash
 git clone https://github.com/Aurelkev/Portfolio.git
 cd Portfolio
-
+```
 ### 2. Installer les dépendances
 ```bash
 
 npm install
-
+```
 ### 3. Lancer le serveur de developpement 
 ```bash 
 
 npm run dev
-
+```
 L'application sera disponible sur : http://localhost:5173/
 
 ## 🌐 Déploiement
