@@ -13,7 +13,6 @@ export default function About() {
           >
             Développeur Front-end
           </h3>
-
           <p className="mb-4 drop-shadow-sm transition transform hover:scale-105">
             Je conçois des interfaces modernes avec un souci du détail et de
             l’expérience utilisateur.
@@ -23,8 +22,8 @@ export default function About() {
             J’utilise principalement{" "}
             <span className="font-semibold text-primary-dark">React</span>,{" "}
             <span className="font-semibold text-primary-dark">Vite</span>,{" "}
-            <span className="font-semibold text-primary-dark">TailwindCSS</span> et
-            je m’intéresse particulièrement aux bonnes pratiques, à la
+            <span className="font-semibold text-primary-dark">TailwindCSS</span>{" "}
+            et je m’intéresse particulièrement aux bonnes pratiques, à la
             performance et à l’accessibilité.
           </p>
 
