@@ -10,8 +10,8 @@ export default function LifePath() {
       >
         Voir mon CV
       </Link>
-      <a
-        href="./cv/CV.pdf"
+       <a
+        href={`${import.meta.env.BASE_URL}cv/CV.pdf`}
         download="CV_Kevin_Holleville.pdf"
         className="px-6 py-3 bg-black text-white font-semibold rounded-lg 
                    hover:bg-black/80 transition shadow"

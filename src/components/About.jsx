@@ -5,14 +5,14 @@ export default function About() {
     <section id="about" className="my-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="text-center text-lg leading-relaxed text-dark">
-          <h3
+          <h2
             className="text-3xl font-bold mb-6
                          bg-clip-text text-transparent 
                          bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
                          drop-shadow-md"
           >
             Développeur Front-end
-          </h3>
+          </h2>
           <p className="mb-4 drop-shadow-sm transition transform hover:scale-105">
             Je conçois des interfaces modernes avec un souci du détail et de
             l’expérience utilisateur.

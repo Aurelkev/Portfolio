@@ -16,8 +16,17 @@ export default function ProjectGrid() {
         {projectList.map((project, idx) => (
           <div
             key={idx}
-            className="relative w-auto h-35 cursor-pointer group overflow-hidden rounded flex justify-center items-center"
+            className="relative w-auto h-35 cursor-pointer group overflow-hidden rounded flex justify-center items-center 
+             focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             onClick={() => openModal(project)}
+            tabIndex="0"
+            role="button"
+            aria-label={`Ouvrir le projet ${project.title}`}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                openModal(project);
+              }
+            }}
           >
             <img
               src={images[project.image]}
@@ -36,7 +45,10 @@ export default function ProjectGrid() {
 
       {selectedProject && (
         <>
-          <div className="fixed inset-0 z-40 bg-black bg-opacity-50" onClick={closeModal}></div>
+          <div
+            className="fixed inset-0 z-40 bg-black bg-opacity-50"
+            onClick={closeModal}
+          ></div>
           <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
             <div
               className="
@@ -59,13 +71,18 @@ export default function ProjectGrid() {
               </h3>
 
               <div className="mb-6 text-left text-gray-800 leading-relaxed">
-                {selectedProject.sections
-                  ? selectedProject.sections.map((section, idx) => (
-                      <p key={idx} className="mb-3">
-                        <strong className="text-blue-600 underline">{section.title} :</strong> {section.content}
-                      </p>
-                    ))
-                  : <p>{selectedProject.desc}</p> }
+                {selectedProject.sections ? (
+                  selectedProject.sections.map((section, idx) => (
+                    <p key={idx} className="mb-3">
+                      <strong className="text-blue-600 underline">
+                        {section.title} :
+                      </strong>{" "}
+                      {section.content}
+                    </p>
+                  ))
+                ) : (
+                  <p>{selectedProject.desc}</p>
+                )}
               </div>
 
               <div className="flex justify-center">
