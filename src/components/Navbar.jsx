@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center py-4 px-6 md:px-12 bg-dark text-primary shadow relative">
-      <div className="flex flex-row items-center space-x-4">
+      <div className="flex flex-row items-center space-x-4 flex-1 min-w-0">
         <img
           src={images.logo}
           alt="Mon Logo"
@@ -19,7 +19,7 @@ export default function Navbar() {
         <h1 className="text-2xl md:text-3xl font-bold">Holleville Kévin</h1>
       </div>
 
-      <ul className="hidden md:flex space-x-6 text-secondary font-medium">
+      <ul className="hidden lg:flex space-x-6 text-secondary font-medium">
         <NavLink text="Accueil" to="/" />
         <NavLink text="À propos" href="#about" />
         <NavLink text="Projets" href="#projets" />
@@ -27,7 +27,7 @@ export default function Navbar() {
         <NavLink text="Parcours" href="#lifepath" />
         <NavLink text="Contact" href="#contact" />
       </ul>
-      <button className="md:hidden text-primary" onClick={() => setOpen(!open)}>
+      <button className="lg:hidden text-primary" onClick={() => setOpen(!open)}>
         {!open && <FontAwesomeIcon icon={faBars} className="w-8 h-8" />}
         {open && <FontAwesomeIcon icon={faXmark} className="w-8 h-8" />}
         <span className="sr-only">{open ? "Fermer le menu" : "Ouvrir le menu"}</span>
