@@ -34,7 +34,7 @@ export default function Navbar() {
       </button>
 
       {open && (
-        <div className="absolute top-full left-0 w-full bg-dark text-primary shadow-lg md:hidden z-50">
+        <div className="absolute top-full left-0 w-full bg-dark text-primary shadow-lg lg:hidden z-50">
           <ul className="flex flex-col items-center py-4 space-y-4">
             <NavLink text="Accueil" to="/" onClick={() => setOpen(false)} />
             <NavLink text="À propos" href="#about" onClick={() => setOpen(false)} />
